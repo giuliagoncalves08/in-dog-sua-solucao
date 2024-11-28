@@ -1,66 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# In-Dog
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descrição
+In-Dog é uma plataforma desenvolvida em Laravel que ajuda donos de cães com rotinas agitadas a garantir que seus melhores amigos de quatro patas recebam a atenção e os passeios necessários. Com o In-Dog, os usuários podem agendar passeios com dog walkers confiáveis e experientes, assegurando que seus animais de estimação estejam felizes e saudáveis.
 
-## About Laravel
+## Funcionalidades
+Agendamento de Passeios: Agende passeios para seus cães de acordo com sua disponibilidade e necessidades.
+Seleção de Dog Walkers: Escolha entre uma lista de dog walkers confiáveis e experientes.
+Acompanhamento em Tempo Real: Acompanhe o passeio do seu cão em tempo real através de notificações e atualizações no aplicativo.
+Perfil de Usuário e Cão: Crie perfis detalhados para você e seu cão, incluindo informações como raça, idade e necessidades especiais.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Requisitos
+PHP 8.x
+Composer
+Laravel 9.x
+MySQL ou outro banco de dados suportado
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalação
+Para configurar o projeto em seu ambiente local, siga estas etapas:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Clone o repositório
+git clone https://github.com/seu-usuario/in-dog.git
 
-## Learning Laravel
+### Navegue até o diretório do projeto
+cd in-dog
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Instale as dependências do Composer
+composer install
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Copie o arquivo .env.example para .env
+cp .env.example .env
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Configure suas variáveis de ambiente no arquivo .env, incluindo configurações do banco de dados e chaves de API
 
-## Laravel Sponsors
+## Configuração
+Após a instalação, configure o arquivo .env com as informações necessárias:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nome_do_banco
+DB_USERNAME=usuario
+DB_PASSWORD=senha
 
-### Premium Partners
+### Outras variáveis de ambiente podem ser necessárias, como chaves de API
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Uso
+Inicie o servidor local com o comando:
 
-## Contributing
+php artisan serve
+Acesse a aplicação em http://localhost:8000.
+Para interagir com a API ou outras funcionalidades, consulte a documentação interna do projeto ou as rotas disponíveis.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Contribuição
+Se você deseja contribuir para o desenvolvimento deste projeto, por favor siga estas etapas:
 
-## Code of Conduct
+Faça um fork do repositório
+Crie uma branch para sua feature (git checkout -b minha-feature)
+Faça commit das suas alterações (git commit -am 'Adiciona nova feature')
+Faça push para a branch (git push origin minha-feature)
+Envie um pull request
+Consulte o CONTRIBUTING.md para mais detalhes.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Licença
+Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
 
-## Security Vulnerabilities
+Autor: Giulia Goncalves , Ana Clara , Arthur Drumond , Dariene Kelly , Izadora Santiago 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
